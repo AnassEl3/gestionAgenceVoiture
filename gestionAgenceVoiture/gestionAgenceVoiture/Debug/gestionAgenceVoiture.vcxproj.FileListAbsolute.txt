@@ -1,0 +1,4 @@
+C:\Users\hp\Desktop\mini project\gestionAgenceVoiture\gestionAgenceVoiture\Debug\gestionAgenceVoiture.vcxproj.AssemblyReference.cache
+C:\Users\hp\Desktop\mini project\gestionAgenceVoiture\gestionAgenceVoiture\Debug\gestionAgenceVoiture.Authentification.resources
+C:\Users\hp\Desktop\mini project\gestionAgenceVoiture\gestionAgenceVoiture\Debug\gestionAgenceVoiture.vcxproj.GenerateResource.cache
+C:\Users\hp\Desktop\mini project\gestionAgenceVoiture\gestionAgenceVoiture\Debug\gestionAgenceVoiture.vcxproj.CopyComplete
