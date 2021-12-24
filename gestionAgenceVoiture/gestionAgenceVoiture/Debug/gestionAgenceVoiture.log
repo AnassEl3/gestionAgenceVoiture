@@ -1,4 +1,7 @@
-﻿  Authentification.cpp
-C:\Users\hp\Desktop\mini project\gestionAgenceVoiture\gestionAgenceVoiture\Authentification.cpp(9,1): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
-  Authentification.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  gestionAgenceVoiture.vcxproj -> C:\Users\hp\Desktop\mini project\gestionAgenceVoiture\Debug\gestionAgenceVoiture.exe
+﻿  Auth.cpp
+  Authentification.cpp
+C:\Users\hp\Desktop\miniProjet\gestionAgenceVoiture\gestionAgenceVoiture\Authentification.cpp(9,1): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  Generating Code...
+  Auth.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  gestionAgenceVoiture.vcxproj -> C:\Users\hp\Desktop\miniProjet\gestionAgenceVoiture\Debug\gestionAgenceVoiture.exe

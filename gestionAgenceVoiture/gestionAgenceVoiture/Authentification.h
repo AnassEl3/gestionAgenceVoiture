@@ -68,7 +68,6 @@ namespace gestionAgenceVoiture {
 		void InitializeComponent(void)
 		{
 			this->components = (gcnew System::ComponentModel::Container());
-			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Authentification::typeid));
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->guna2ControlBox2 = (gcnew Guna::UI2::WinForms::Guna2ControlBox());
 			this->guna2ControlBox1 = (gcnew Guna::UI2::WinForms::Guna2ControlBox());
@@ -86,29 +85,26 @@ namespace gestionAgenceVoiture {
 			// 
 			// panel1
 			// 
-			this->panel1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"panel1.BackgroundImage")));
+			this->panel1->BackColor = System::Drawing::Color::Silver;
 			this->panel1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->panel1->Controls->Add(this->guna2ControlBox2);
-			this->panel1->Controls->Add(this->guna2ControlBox1);
 			this->panel1->Controls->Add(this->label1);
 			this->panel1->Controls->Add(this->guna2ToggleSwitch1);
 			this->panel1->Controls->Add(this->guna2Button2);
 			this->panel1->Controls->Add(this->guna2Button1);
 			this->panel1->Controls->Add(this->guna2TextBox2);
 			this->panel1->Controls->Add(this->guna2TextBox1);
-			this->panel1->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->panel1->Location = System::Drawing::Point(0, 0);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(928, 566);
+			this->panel1->Size = System::Drawing::Size(358, 566);
 			this->panel1->TabIndex = 0;
 			// 
 			// guna2ControlBox2
 			// 
 			this->guna2ControlBox2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->guna2ControlBox2->ControlBoxType = Guna::UI2::WinForms::Enums::ControlBoxType::MinimizeBox;
-			this->guna2ControlBox2->FillColor = System::Drawing::Color::Black;
+			this->guna2ControlBox2->FillColor = System::Drawing::Color::Gainsboro;
 			this->guna2ControlBox2->HoverState->Parent = this->guna2ControlBox2;
-			this->guna2ControlBox2->IconColor = System::Drawing::Color::White;
+			this->guna2ControlBox2->IconColor = System::Drawing::Color::Black;
 			this->guna2ControlBox2->Location = System::Drawing::Point(844, 12);
 			this->guna2ControlBox2->Name = L"guna2ControlBox2";
 			this->guna2ControlBox2->ShadowDecoration->Parent = this->guna2ControlBox2;
@@ -118,10 +114,11 @@ namespace gestionAgenceVoiture {
 			// guna2ControlBox1
 			// 
 			this->guna2ControlBox1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
-			this->guna2ControlBox1->FillColor = System::Drawing::Color::Black;
+			this->guna2ControlBox1->BorderColor = System::Drawing::Color::Gainsboro;
+			this->guna2ControlBox1->FillColor = System::Drawing::Color::Gainsboro;
 			this->guna2ControlBox1->HoverState->FillColor = System::Drawing::Color::Red;
 			this->guna2ControlBox1->HoverState->Parent = this->guna2ControlBox1;
-			this->guna2ControlBox1->IconColor = System::Drawing::Color::White;
+			this->guna2ControlBox1->IconColor = System::Drawing::Color::Black;
 			this->guna2ControlBox1->Location = System::Drawing::Point(883, 12);
 			this->guna2ControlBox1->Name = L"guna2ControlBox1";
 			this->guna2ControlBox1->ShadowDecoration->Parent = this->guna2ControlBox1;
@@ -131,7 +128,7 @@ namespace gestionAgenceVoiture {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->BackColor = System::Drawing::Color::Black;
+			this->label1->BackColor = System::Drawing::Color::Silver;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Segoe UI", 8.25F));
 			this->label1->ForeColor = System::Drawing::Color::White;
 			this->label1->Location = System::Drawing::Point(78, 347);
@@ -143,7 +140,7 @@ namespace gestionAgenceVoiture {
 			// guna2ToggleSwitch1
 			// 
 			this->guna2ToggleSwitch1->Animated = true;
-			this->guna2ToggleSwitch1->BackColor = System::Drawing::Color::Black;
+			this->guna2ToggleSwitch1->BackColor = System::Drawing::Color::Silver;
 			this->guna2ToggleSwitch1->CheckedState->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(234)),
 				static_cast<System::Int32>(static_cast<System::Byte>(153)), static_cast<System::Int32>(static_cast<System::Byte>(149)));
 			this->guna2ToggleSwitch1->CheckedState->FillColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(234)),
@@ -183,6 +180,7 @@ namespace gestionAgenceVoiture {
 			this->guna2Button2->HoverState->Parent = this->guna2Button2;
 			this->guna2Button2->Location = System::Drawing::Point(189, 408);
 			this->guna2Button2->Name = L"guna2Button2";
+			this->guna2Button2->PressedColor = System::Drawing::Color::Gainsboro;
 			this->guna2Button2->ShadowDecoration->Parent = this->guna2Button2;
 			this->guna2Button2->Size = System::Drawing::Size(126, 45);
 			this->guna2Button2->TabIndex = 7;
@@ -213,7 +211,7 @@ namespace gestionAgenceVoiture {
 			// guna2TextBox2
 			// 
 			this->guna2TextBox2->Animated = true;
-			this->guna2TextBox2->BackColor = System::Drawing::Color::Black;
+			this->guna2TextBox2->BackColor = System::Drawing::Color::Silver;
 			this->guna2TextBox2->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(234)), static_cast<System::Int32>(static_cast<System::Byte>(153)),
 				static_cast<System::Int32>(static_cast<System::Byte>(149)));
 			this->guna2TextBox2->BorderRadius = 6;
@@ -228,17 +226,19 @@ namespace gestionAgenceVoiture {
 			this->guna2TextBox2->DisabledState->Parent = this->guna2TextBox2;
 			this->guna2TextBox2->DisabledState->PlaceholderForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(138)),
 				static_cast<System::Int32>(static_cast<System::Byte>(138)), static_cast<System::Int32>(static_cast<System::Byte>(138)));
-			this->guna2TextBox2->FillColor = System::Drawing::Color::Black;
+			this->guna2TextBox2->FillColor = System::Drawing::Color::Silver;
 			this->guna2TextBox2->FocusedState->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(94)),
 				static_cast<System::Int32>(static_cast<System::Byte>(148)), static_cast<System::Int32>(static_cast<System::Byte>(255)));
 			this->guna2TextBox2->FocusedState->Parent = this->guna2TextBox2;
 			this->guna2TextBox2->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9));
+			this->guna2TextBox2->ForeColor = System::Drawing::Color::Black;
 			this->guna2TextBox2->HoverState->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(94)),
 				static_cast<System::Int32>(static_cast<System::Byte>(148)), static_cast<System::Int32>(static_cast<System::Byte>(255)));
 			this->guna2TextBox2->HoverState->Parent = this->guna2TextBox2;
 			this->guna2TextBox2->Location = System::Drawing::Point(37, 286);
 			this->guna2TextBox2->Name = L"guna2TextBox2";
 			this->guna2TextBox2->PasswordChar = '\0';
+			this->guna2TextBox2->PlaceholderForeColor = System::Drawing::Color::Black;
 			this->guna2TextBox2->PlaceholderText = L"Password";
 			this->guna2TextBox2->SelectedText = L"";
 			this->guna2TextBox2->ShadowDecoration->Parent = this->guna2TextBox2;
@@ -249,7 +249,7 @@ namespace gestionAgenceVoiture {
 			// guna2TextBox1
 			// 
 			this->guna2TextBox1->Animated = true;
-			this->guna2TextBox1->BackColor = System::Drawing::Color::Black;
+			this->guna2TextBox1->BackColor = System::Drawing::Color::Silver;
 			this->guna2TextBox1->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(234)), static_cast<System::Int32>(static_cast<System::Byte>(153)),
 				static_cast<System::Int32>(static_cast<System::Byte>(149)));
 			this->guna2TextBox1->BorderRadius = 6;
@@ -264,17 +264,19 @@ namespace gestionAgenceVoiture {
 			this->guna2TextBox1->DisabledState->Parent = this->guna2TextBox1;
 			this->guna2TextBox1->DisabledState->PlaceholderForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(138)),
 				static_cast<System::Int32>(static_cast<System::Byte>(138)), static_cast<System::Int32>(static_cast<System::Byte>(138)));
-			this->guna2TextBox1->FillColor = System::Drawing::Color::Black;
+			this->guna2TextBox1->FillColor = System::Drawing::Color::Silver;
 			this->guna2TextBox1->FocusedState->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(94)),
 				static_cast<System::Int32>(static_cast<System::Byte>(148)), static_cast<System::Int32>(static_cast<System::Byte>(255)));
 			this->guna2TextBox1->FocusedState->Parent = this->guna2TextBox1;
 			this->guna2TextBox1->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9));
+			this->guna2TextBox1->ForeColor = System::Drawing::Color::Black;
 			this->guna2TextBox1->HoverState->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(94)),
 				static_cast<System::Int32>(static_cast<System::Byte>(148)), static_cast<System::Int32>(static_cast<System::Byte>(255)));
 			this->guna2TextBox1->HoverState->Parent = this->guna2TextBox1;
 			this->guna2TextBox1->Location = System::Drawing::Point(37, 225);
 			this->guna2TextBox1->Name = L"guna2TextBox1";
 			this->guna2TextBox1->PasswordChar = '\0';
+			this->guna2TextBox1->PlaceholderForeColor = System::Drawing::Color::Black;
 			this->guna2TextBox1->PlaceholderText = L"Login";
 			this->guna2TextBox1->SelectedText = L"";
 			this->guna2TextBox1->ShadowDecoration->Parent = this->guna2TextBox1;
@@ -302,8 +304,11 @@ namespace gestionAgenceVoiture {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::Color::Gainsboro;
 			this->ClientSize = System::Drawing::Size(928, 566);
+			this->Controls->Add(this->guna2ControlBox2);
 			this->Controls->Add(this->panel1);
+			this->Controls->Add(this->guna2ControlBox1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
 			this->Name = L"Authentification";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
