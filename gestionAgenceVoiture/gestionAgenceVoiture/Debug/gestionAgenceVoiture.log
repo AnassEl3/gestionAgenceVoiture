@@ -1,0 +1,4 @@
+﻿  Auth.cpp
+D:\school\ISGA\1 ére année\S1\POO (C++)\miniProjet\gestionAgenceVoiture\gestionAgenceVoiture\Auth.cpp(8,33): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  Auth.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  gestionAgenceVoiture.vcxproj -> D:\school\ISGA\1 ére année\S1\POO (C++)\miniProjet\gestionAgenceVoiture\Debug\gestionAgenceVoiture.exe
